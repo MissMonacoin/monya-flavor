@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="org.missmonacoin.monya" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>もにゃ</name>
+    <name>もにゃのみ</name>
     <description>
-    A sample Apache Cordova application that responds to the deviceready event.
+    The simplest Litecoin(Child) Wallet
   </description>
-    <author email="missmonacoin+monya@gmail.com" href="http://missmonacoin.github.io/monya">
+    <author email="missmonacoin+monya@gmail.com" href="http://monya-wallet.github.io">
     MissMonacoin
   </author>
     <content src="index.html" />
