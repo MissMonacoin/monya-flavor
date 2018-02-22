@@ -1,5 +1,6 @@
 {
   "<!--t:AppName-->":"もにゃのみ",
   "<!--t:Version-->":"1.4.0",
-  "<!--t:FlavorName-->":"mona"
+  "<!--t:FlavorName-->":"mona",
+  "<!--t:primaryCoinId-->":"mona"
 }
