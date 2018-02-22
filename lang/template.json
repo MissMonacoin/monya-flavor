@@ -1,5 +1,6 @@
 {
   "<!--t:AppName-->":"びっちー",
   "<!--t:Version-->":"1.4.0",
-  "<!--t:FlavorName-->":"bch"
+  "<!--t:FlavorName-->":"bch",
+  "<!--t:primaryCoinId-->":"bch"
 }
