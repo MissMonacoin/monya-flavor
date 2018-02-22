@@ -104,7 +104,9 @@ exports.init =customCoins=>{
     const defCoin = customCoins[i]
     coins[defCoin.coinId]=new Currency(defCoin)
   }
+  exports.isSingleWallet = (defaultCoins.length+customCoins.length)<2
 }
 exports.addCurrency=customCoin=>{
   coins[customCoin.coinId]=customCoin
 }
+exports.isSingleWallet = false
