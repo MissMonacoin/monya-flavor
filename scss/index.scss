@@ -356,14 +356,17 @@ ons-popover .popover__content{
     .word{
       display:inline-block;
       margin:5px;
-      padding:4px;
+      padding:5px;
       border:#ddd 1px solid;
-      
-      border-radius:3.5px;
+      border-radius:4px;
       .wd{
         color:black;
       }
       .deleteBtn{
+        color:#aaa;
+        vertical-align: middle;
+      }
+      .wordNo{
         color:#aaa;
       }
       input{
@@ -398,6 +401,12 @@ ons-popover .popover__content{
   }
 }
 [data-page="question"]{
+  #ansBack{
+    position:fixed;
+    bottom:0;
+    left:0;
+    margin:10px;
+  }
   .questionItem{
     text-align:center;
     padding:3%;
@@ -633,7 +642,7 @@ $zaifPayLogoSize:200px;
   width:$homeCurIconSize;
   height:$homeCurIconSize;
 }
-[data-page="monaparty"]{
+[data-page="monaparty"],[data-page="listTokens"]{
 
   #tokens{
     text-align:center;
@@ -641,7 +650,7 @@ $zaifPayLogoSize:200px;
       height:200px;
       width:140px;
       display:inline-block;
-      margin:5px;
+      margin:4px;
       position:relative;
       background-repeat: no-repeat no-repeat;
       background-position:center center;
@@ -658,15 +667,22 @@ $zaifPayLogoSize:200px;
         bottom:0;
         right:0;
         padding:2px;
+        box-sizing: border-box;
         background:rgba(255,255,255,0.8);
         border-radius: 3px 0 0 0;
+        max-width:100%;
         .currencySet{
+          
           .amount{
             display: block;
+            font-size:1.1em
           }
           .ticker{
             display: block;
             font-size:0.7em;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
           }
         }
       }
@@ -676,7 +692,7 @@ $zaifPayLogoSize:200px;
 [data-page="tokenInfo"]{
   #cardArea{
     margin:10px;
-    height:350px;
+    height:500px;
     #card{
       width:100%;
       height:100%;
@@ -699,7 +715,7 @@ $zaifPayLogoSize:200px;
     width: 100%;
   }
 }
-[data-page="tokenInfo"],[data-page="monaparty"],[data-page="sendToken"],[data-page="makeToken"],[data-page="dexOrder"]{
+[data-page="tokenInfo"],[data-page="monaparty"],[data-page="listTokens"],[data-page="sendToken"],[data-page="makeToken"],[data-page="dexOrder"]{
   ons-toolbar{
     background:linear-gradient(to bottom, #9e3429 0%,#6b2f27 100%);
     ons-icon,.toolbar__title,.back-button__icon{

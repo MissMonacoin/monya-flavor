@@ -231,7 +231,7 @@ exports.parseUrl=url=>new Promise((resolve,reject)=>{
     if(v.bip21===ret.protocol){
       ret.isCoinAddress=true
       ret.coinId=v.coinId
-      ret.address=raw.pathname
+      ret.address=raw.pathname||raw.hostname
       if (v.isValidAddress(ret.address)) {
         ret.isPrefixOk=true
       }
