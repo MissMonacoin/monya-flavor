@@ -7,7 +7,7 @@ const j = require("./lang").getLang()==="ja"
 
 const defaultCoins=[
   {
-    coinScreenName:j?"ミスモナちゃんコイン":"Miss Monacoin chan coin",
+    coinScreenName:j?"堪忍袋":"Miss Monacoin chan coin",
     coinId:"mona",
     unit:"MONA",
     unitEasy:j?"モナ":"Mona",
